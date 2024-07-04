@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="my-4">Rock Paper Scissors</h1>
+      <div class="choices d-flex justify-content-center my-4">
+        <div class="choice mx-2" id="rock">
+          <img src="./images/rock.png" class="img-fluid" />
+        </div>
+        <div class="choice mx-2" id="paper">
+          <img src="./images/paper.png" class="img-fluid" />
+        </div>
+        <div class="choice mx-2" id="scissors">
+          <img src="./images/scissors.png" class="img-fluid" />
+        </div>
+      </div>
+
+      <div class="score-board d-flex justify-content-center my-4">
+        <div class="score mx-4">
+          <p id="user-score" class="display-4">0</p>
+          <p>You</p>
+        </div>
+        <div class="score mx-4">
+          <p id="comp-score" class="display-4">0</p>
+          <p>Comp</p>
+        </div>
+      </div>
+
+      <div class="msg-container my-4">
+        <p id="msg" class="lead">Play your move</p>
+      </div>
+      <div class="my-4">
+        <select id="game-type" class="custom-select w-50">
+          <option value="normal">Normal Game</option>
+          <option value="series">Series Game</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
